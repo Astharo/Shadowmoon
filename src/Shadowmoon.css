@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+:root {
+  --absolute-fill: {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  };
+}
+
+:global(.clear-image) {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+:global(.ngr-overlay-container) {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+}
+
+.ngrContainer,
+.ngrControlContainer {
+  @apply --absolute-fill;
+}
